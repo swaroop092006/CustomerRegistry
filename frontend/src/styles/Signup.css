@@ -1,0 +1,251 @@
+/* Same global styles */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
+}
+
+body{
+background:#eef4ff;
+}
+
+.signup-page{
+display:flex;
+min-height:100vh;
+}
+
+/* Left */
+
+.signup-left{
+flex:1;
+background:linear-gradient(135deg,#2563eb,#4f46e5,#7c3aed);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:50px;
+color:white;
+}
+
+.branding{
+max-width:500px;
+}
+
+.branding h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.branding h3{
+margin-bottom:20px;
+font-weight:400;
+}
+
+.branding p{
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.features{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.feature-box{
+background:rgba(255,255,255,.18);
+padding:15px;
+border-radius:12px;
+backdrop-filter:blur(10px);
+}
+
+/* Right */
+
+.signup-right{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f8fbff;
+padding:40px;
+}
+
+.signup-card{
+background:white;
+width:100%;
+max-width:520px;
+padding:40px;
+border-radius:22px;
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.signup-card h2{
+text-align:center;
+font-size:30px;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:gray;
+margin-bottom:25px;
+}
+
+/* Inputs */
+
+.input-group{
+margin-bottom:18px;
+}
+
+.input-group label{
+display:block;
+margin-bottom:8px;
+font-weight:600;
+}
+
+.input-group input{
+width:100%;
+padding:15px;
+border:1px solid #ccc;
+border-radius:12px;
+font-size:16px;
+}
+
+.input-group input:focus{
+outline:none;
+border-color:#2563eb;
+box-shadow:0 0 8px rgba(37,99,235,.25);
+}
+
+/* Password */
+
+.password-container{
+display:flex;
+}
+
+.password-container input{
+flex:1;
+border-radius:12px 0 0 12px;
+}
+
+.show-btn{
+background:#2563eb;
+color:white;
+border:none;
+padding:0 18px;
+cursor:pointer;
+border-radius:0 12px 12px 0;
+}
+
+/* Terms */
+
+.terms{
+margin:20px 0;
+}
+
+.terms label{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+/* Buttons */
+
+.signup-btn,
+.google-btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+transition:.3s;
+}
+
+.signup-btn{
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+color:white;
+}
+
+.signup-btn:hover{
+transform:translateY(-2px);
+}
+
+.google-btn{
+margin-top:20px;
+background:white;
+border:1px solid #ddd;
+}
+
+.google-btn:hover{
+background:#f5f5f5;
+}
+
+/* Divider */
+
+.divider{
+margin:25px 0;
+text-align:center;
+position:relative;
+}
+
+.divider span{
+background:white;
+padding:0 12px;
+position:relative;
+color:gray;
+}
+
+.divider::before{
+content:"";
+position:absolute;
+width:100%;
+height:1px;
+background:#ddd;
+left:0;
+top:50%;
+}
+
+/* Login */
+
+.login-text{
+margin-top:25px;
+text-align:center;
+}
+
+.login-text a{
+color:#2563eb;
+font-weight:bold;
+text-decoration:none;
+}
+
+.login-text a:hover{
+text-decoration:underline;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.signup-page{
+flex-direction:column;
+}
+
+.signup-left{
+padding:35px;
+}
+
+.signup-right{
+padding:25px;
+}
+
+.signup-card{
+padding:30px;
+}
+
+.branding h1{
+font-size:32px;
+}
+
+}

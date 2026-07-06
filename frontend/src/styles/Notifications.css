@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:#eef4ff;
+}
+
+.notification-page{
+    min-height:100vh;
+    padding:40px;
+    background:#eef4ff;
+}
+
+.notification-container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.1);
+}
+
+.notification-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.notification-header h1{
+    color:#2563eb;
+}
+
+.notification-header p{
+    color:#666;
+}
+
+.back-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+}
+
+.notification-actions{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.read-btn{
+    background:#10b981;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.clear-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.notification-card{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.notification-card:hover{
+    transform:translateY(-2px);
+}
+
+.unread{
+    background:#edf4ff;
+    border-left:6px solid #2563eb;
+}
+
+.read{
+    background:#f5f5f5;
+    border-left:6px solid #10b981;
+}
+
+.notification-icon{
+    font-size:28px;
+}
+
+.notification-content h3{
+    color:#222;
+    margin-bottom:8px;
+}
+
+.notification-content p{
+    color:#555;
+    margin-bottom:8px;
+}
+
+.notification-content span{
+    color:#888;
+    font-size:14px;
+}
+
+.empty-box{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.empty-box h2{
+    font-size:60px;
+}
+
+.empty-box p{
+    margin-top:15px;
+    color:#666;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+
+.notification-header{
+    flex-direction:column;
+    gap:20px;
+}
+
+.notification-actions{
+    flex-direction:column;
+}
+
+}
