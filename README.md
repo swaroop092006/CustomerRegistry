@@ -130,8 +130,9 @@ Backend: http://localhost:5000
 - Dashboard Analytics
 
 ## Author
-
 **Swaroop**
 
 GitHub:
 https://github.com/swaroop092006
+Documentation:https://drive.google.com/drive/folders/1GdswgkAWgHv6vuBW5_7q6lXyF5NC8OKi?usp=drive_link
+:https://drive.google.com/drive/folders/1z4ZlGus4oGh1J8WxRmcKpC8BT5A0v7cC?usp=drive_link
